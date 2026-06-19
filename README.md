@@ -407,6 +407,7 @@ Test files mirror the package modules:
 * **version 3.0.0**: 
   * dropped support for Python <3.8
   * Python 3.8–3.13 supported and tested
+  * fully type-annotated; ships a `py.typed` marker (PEP 561) and is type-checked with mypy
   * split monolithic `cache.py` into logically grouped modules (`exceptions`, `filters`, `groups`, `parameters`, `refreshable`, `utils`)
   * `__version__` added to package
   * `pyproject.toml` replaces `setup.py` and `requirements*.txt`
