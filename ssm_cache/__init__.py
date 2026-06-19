@@ -1,9 +1,21 @@
-""" Expose 'cache' submodule classes """
-from ssm_cache.cache import (
-    SSMParameter,
-    SSMParameterGroup,
-    SecretsManagerParameter,
+__version__ = "3.0.0"
+
+from ssm_cache.exceptions import (
     InvalidParameterError,
-    InvalidVersionError,
     InvalidPathError,
+    InvalidVersionError,
 )
+from ssm_cache.groups import SSMParameterGroup
+from ssm_cache.parameters import (
+    SecretsManagerParameter,
+    SSMParameter,
+)
+
+__all__ = [
+    "InvalidParameterError",
+    "InvalidPathError",
+    "InvalidVersionError",
+    "SSMParameterGroup",
+    "SSMParameter",
+    "SecretsManagerParameter",
+]
